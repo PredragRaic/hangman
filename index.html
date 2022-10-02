@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./reset.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <div class="main-con">
+        <div class="h1-class">
+            <h1>HANGMAN</h1>
+        </div>
+        <div class="un-list wrap" id="un-list">
+            <ul>
+                <li class="letter" id="A"><h3>A</h3></li>
+                <li class="letter" id="B"><h3>B</h3></li>
+                <li class="letter" id="C"><h3>C</h3></li>
+                <li class="letter" id="D"><h3>D</h3></li>
+                <li class="letter" id="E"><h3>E</h3></li>
+                <li class="letter" id="F"><h3>F</h3></li>
+                <li class="letter" id="G"><h3>G</h3></li>
+                <li class="letter" id="H"><h3>H</h3></li>
+                <li class="letter" id="I"><h3>I</h3></li>
+                <li class="letter" id="J"><h3>J</h3></li>
+                <li class="letter" id="K"><h3>K</h3></li>
+                <li class="letter" id="L"><h3>L</h3></li>
+                <li class="letter" id="M"><h3>M</h3></li>
+                <li class="letter" id="N"><h3>N</h3></li>
+                <li class="letter" id="O"><h3>O</h3></li>
+                <li class="letter" id="P"><h3>P</h3></li>
+                <li class="letter" id="Q"><h3>Q</h3></li>
+                <li class="letter" id="R"><h3>R</h3></li>
+                <li class="letter" id="S"><h3>S</h3></li>
+                <li class="letter" id="T"><h3>T</h3></li>
+                <li class="letter" id="U"><h3>U</h3></li>
+                <li class="letter" id="V"><h3>V</h3></li>
+                <li class="letter" id="W"><h3>W</h3></li>
+                <li class="letter" id="Z"><h3>Z</h3></li>
+                
+            </ul>
+        </div>
+        <div class="guessed-word wrap" id="guessed-word">
+            
+        </div>
+
+
+        <form class="formm wrap" name="myForm" onsubmit="getForm(event)" target="_self">
+            <div id="forma"> 
+                <label for="text">
+                    <p>Insert Term:</p>
+                </label>
+                <input type="text" class="input" name="term" id="term" value="London" required >
+                <label for="category">
+                    <p>Category:</p>
+                </label>
+                <input type="text" class='input' name="category" id="category" value="World City">
+                <br>
+                <button type="submit" value="submit" id="submit">Submit Term</button>
+            </div> 
+        </form>
+        <div class="img-block" id="image-block">
+
+        </div>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
